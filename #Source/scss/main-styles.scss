@@ -2297,15 +2297,15 @@ body {
 			flex-direction: column;
 			align-items: flex-start;
 		}
-		.select{
-			.select__button{
+		.select {
+			.select__button {
 				padding-block: 7px;
 			}
-			.select__option{
+			.select__option {
 				padding: 7px 9px;
 			}
 			.select__original-control {
-				@media (max-width:767.98px) {
+				@media (max-width: 767.98px) {
 					padding-block: 7px;
 				}
 			}
@@ -2793,12 +2793,12 @@ body {
 
 	&__cover {
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-		border-radius: 8px ;
+		border-radius: 8px;
 
 		overflow: hidden;
 		width: 100%;
 		padding-bottom: 75%;
-		@media (max-width:40.625rem) {
+		@media (max-width: 40.625rem) {
 			padding-bottom: 48%;
 			border-radius: 0;
 		}
@@ -3195,6 +3195,33 @@ body {
 }
 
 //==========================================================================================================================================================
+
+.policy-content {
+	@include adaptiveValue(padding-top, 50, 40);
+	@include adaptiveValue(padding-bottom, 110, 80);
+	&__container {
+		max-width: 46.625rem;
+	}
+
+	&__title {
+		font-weight: 600;
+		@include adaptiveValue(font-size, 48, 30);
+		line-height: 97%;
+		letter-spacing: -0.06em;
+		color: #27323d;
+		@include adaptiveValue(margin-bottom, 32, 25);
+	}
+
+	&__text {
+		p:not(:last-child){
+			@include adaptiveValue(margin-bottom, 25, 15);
+			}
+			&:not(:last-child){
+				@include adaptiveValue(margin-bottom, 50, 30);
+				}
+	}
+}
+
 //==========================================================================================================================================================
 
 //==========================================================================================================================================================
