@@ -3800,6 +3800,17 @@ body._lock {
             align-items: flex-start;
   }
 }
+.header-search-results__sort .select .select__button {
+  padding-block: 7px;
+}
+.header-search-results__sort .select .select__option {
+  padding: 7px 9px;
+}
+@media (max-width: 767.98px) {
+  .header-search-results__sort .select .select__original-control {
+    padding-block: 7px;
+  }
+}
 .header-search-results__display-buttons {
   border: 1px solid #d1d5db;
   border-radius: 6px;

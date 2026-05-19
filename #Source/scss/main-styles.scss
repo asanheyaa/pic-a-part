@@ -2297,6 +2297,19 @@ body {
 			flex-direction: column;
 			align-items: flex-start;
 		}
+		.select{
+			.select__button{
+				padding-block: 7px;
+			}
+			.select__option{
+				padding: 7px 9px;
+			}
+			.select__original-control {
+				@media (max-width:767.98px) {
+					padding-block: 7px;
+				}
+			}
+		}
 	}
 
 	&__sort-text {
