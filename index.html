@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nevada | Pic a part">
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main-styles.css">
-    <!-- &display=swap -->
 
 
-    <title>NewProject</title>
+    <title>Nevada | Pic a part</title>
 </head>
 
 <body>
@@ -285,6 +285,27 @@
                                             </div>
                                             <div class="form-action-home__fields">
                                                 <div class="form-action-home__field">
+                                                    <!-- 
+                                                      ⚠️ CRITICAL HTML MARKUP RULES FOR SELECT COMPONENT
+                                                      
+                                                      1. COMPONENT BEHAVIOR BY DEVICE:
+                                                         - The custom dropdown ([data-js-select-dropdown]) is displayed ONLY on Desktop and Tablets.
+                                                         - The native <select> ([data-js-select-original-control]) is displayed ONLY on Mobile devices.
+                                                      
+                                                      2. OPTION ORDER SYNCHRONIZATION:
+                                                         - The order of elements inside the custom dropdown MUST perfectly match 
+                                                           the order of <option> tags inside the native <select> (Index-to-Index).
+                                                      
+                                                      3. VALUE & TEXT IDENTITY:
+                                                         - The `value` attribute of the <option> tag MUST be exactly identical to its inner text 
+                                                           (case-sensitive), otherwise JavaScript won't be able to pass the value to the control.
+                                                         - Correct:   <option value="Oldest">Oldest</option>
+                                                         - Incorrect: <option value="oldest">Oldest</option>
+                                                      
+                                                      4. INITIAL INITIALIZATION:
+                                                         - The active item text inside the button ([data-js-select-button]) MUST match 
+                                                           the <option> tag that has the `selected` attribute during page load.
+                                                    -->
                                                     <div class="select" data-js-select>
                                                         <label class="form-action-home__label" id="prefix-select-label"
                                                             for="dropdownPrefix">
@@ -372,6 +393,27 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-action-home__field">
+                                                    <!-- 
+                                                      ⚠️ CRITICAL HTML MARKUP RULES FOR SELECT COMPONENT
+                                                      
+                                                      1. COMPONENT BEHAVIOR BY DEVICE:
+                                                         - The custom dropdown ([data-js-select-dropdown]) is displayed ONLY on Desktop and Tablets.
+                                                         - The native <select> ([data-js-select-original-control]) is displayed ONLY on Mobile devices.
+                                                      
+                                                      2. OPTION ORDER SYNCHRONIZATION:
+                                                         - The order of elements inside the custom dropdown MUST perfectly match 
+                                                           the order of <option> tags inside the native <select> (Index-to-Index).
+                                                      
+                                                      3. VALUE & TEXT IDENTITY:
+                                                         - The `value` attribute of the <option> tag MUST be exactly identical to its inner text 
+                                                           (case-sensitive), otherwise JavaScript won't be able to pass the value to the control.
+                                                         - Correct:   <option value="Oldest">Oldest</option>
+                                                         - Incorrect: <option value="oldest">Oldest</option>
+                                                      
+                                                      4. INITIAL INITIALIZATION:
+                                                         - The active item text inside the button ([data-js-select-button]) MUST match 
+                                                           the <option> tag that has the `selected` attribute during page load.
+                                                    -->
                                                     <div class="select" data-js-select>
                                                         <label class="form-action-home__label" id="prefix-select-label"
                                                             for="dropdownPrefix">
@@ -434,6 +476,27 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-action-home__field">
+                                                    <!-- 
+                                                      ⚠️ CRITICAL HTML MARKUP RULES FOR SELECT COMPONENT
+                                                      
+                                                      1. COMPONENT BEHAVIOR BY DEVICE:
+                                                         - The custom dropdown ([data-js-select-dropdown]) is displayed ONLY on Desktop and Tablets.
+                                                         - The native <select> ([data-js-select-original-control]) is displayed ONLY on Mobile devices.
+                                                      
+                                                      2. OPTION ORDER SYNCHRONIZATION:
+                                                         - The order of elements inside the custom dropdown MUST perfectly match 
+                                                           the order of <option> tags inside the native <select> (Index-to-Index).
+                                                      
+                                                      3. VALUE & TEXT IDENTITY:
+                                                         - The `value` attribute of the <option> tag MUST be exactly identical to its inner text 
+                                                           (case-sensitive), otherwise JavaScript won't be able to pass the value to the control.
+                                                         - Correct:   <option value="Oldest">Oldest</option>
+                                                         - Incorrect: <option value="oldest">Oldest</option>
+                                                      
+                                                      4. INITIAL INITIALIZATION:
+                                                         - The active item text inside the button ([data-js-select-button]) MUST match 
+                                                           the <option> tag that has the `selected` attribute during page load.
+                                                    -->
                                                     <div class="select" data-js-select>
                                                         <label class="form-action-home__label" id="prefix-select-label"
                                                             for="dropdownPrefix">
