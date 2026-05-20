@@ -205,13 +205,13 @@
                                 <div class="action-hero-home__forms">
                                     <form action="#" class="action-hero-home__form form-action-home _show"
                                         data-filter-content="parts">
-                                        <div class="form-action-home__step" data-step="01">
+                                        <fieldset class="form-action-home__step" data-step="01">
                                             <div class="form-action-home__item form-action-home__item-alt">
-                                                <label for="userName" class="form-action-home__label">Enter
+                                                <label for="vin-code-parts" class="form-action-home__label">Enter
                                                     VIN</label>
                                                 <div class="form-action-home__wrapper">
-                                                    <input type="text" placeholder="1GKS...456" name="User-name"
-                                                        id="userName" class="form-action-home__input">
+                                                    <input autocapitalize="characters" autocorrect="off" type="text" placeholder="1GKS...456" name="Vin Code"
+                                                        id="vin-code-parts" class="form-action-home__input">
                                                     <div class="form-action-home__info-buttons">
                                                         <button data-pop-up-trigger="vin-info" type="button"
                                                             class="form-action-home__info-button" aria-label="VIN Info">
@@ -307,12 +307,12 @@
                                                            the <option> tag that has the `selected` attribute during page load.
                                                     -->
                                                     <div class="select" data-js-select>
-                                                        <label class="form-action-home__label" id="prefix-select-label"
-                                                            for="dropdownPrefix">
+                                                        <label class="form-action-home__label"
+                                                            id="car-select-parts-label" for="car-select-parts-prefix">
                                                             Make
                                                         </label>
                                                         <select class="select__original-control field__control"
-                                                            id="dropdownPrefix" tabindex="-1"
+                                                            id="car-select-parts-prefix" tabindex="-1"
                                                             data-js-select-original-control>
                                                             <option selected value="Mercedes-Benz">Mercedes-Benz
                                                             </option>
@@ -330,62 +330,63 @@
                                                             <div class="select__button field__control" tabindex="0"
                                                                 role="combobox" aria-expanded="false"
                                                                 aria-haspopup="listbox"
-                                                                aria-controls="prefix-select-dropdown"
-                                                                aria-labelledby="prefix-select-label"
+                                                                aria-controls="car-select-parts-dropdown"
+                                                                aria-labelledby="car-select-parts-label"
+                                                                aria-activedescendant="car-select-parts-options-1"
                                                                 data-js-select-button>
                                                                 Mercedes-Benz
                                                             </div>
-                                                            <div class="select__dropdown" id="prefix-select-dropdown"
-                                                                role="listbox" aria-labelledby="prefix-select-label"
+                                                            <div class="select__dropdown" id="car-select-parts-dropdown"
+                                                                role="listbox" aria-labelledby="car-select-parts-label"
                                                                 data-js-select-dropdown>
                                                                 <div class="select__option is-selected is-current"
-                                                                    id="prefix-select-option-1" role="option"
+                                                                    id="car-select-parts-options-1" role="option"
                                                                     aria-selected="true" data-js-select-option>
                                                                     Mercedes-Benz
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-2"
-                                                                    role="option" aria-selected="false"
-                                                                    data-js-select-option>
+                                                                <div class="select__option"
+                                                                    id="car-select-parts-options-2" role="option"
+                                                                    aria-selected="false" data-js-select-option>
                                                                     Audi
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-3"
-                                                                    role="option" aria-selected="false"
-                                                                    data-js-select-option>
+                                                                <div class="select__option"
+                                                                    id="car-select-parts-options-3" role="option"
+                                                                    aria-selected="false" data-js-select-option>
                                                                     Porsche
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-4"
-                                                                    role="option" aria-selected="false"
-                                                                    data-js-select-option>
+                                                                <div class="select__option"
+                                                                    id="car-select-parts-options-4" role="option"
+                                                                    aria-selected="false" data-js-select-option>
                                                                     Lexus
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-5"
-                                                                    role="option" aria-selected="false"
-                                                                    data-js-select-option>
+                                                                <div class="select__option"
+                                                                    id="car-select-parts-options-5" role="option"
+                                                                    aria-selected="false" data-js-select-option>
                                                                     Jaguar
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-6"
-                                                                    role="option" aria-selected="false"
-                                                                    data-js-select-option>
+                                                                <div class="select__option"
+                                                                    id="car-select-parts-options-6" role="option"
+                                                                    aria-selected="false" data-js-select-option>
                                                                     Volvo
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-7"
-                                                                    role="option" aria-selected="false"
-                                                                    data-js-select-option>
+                                                                <div class="select__option"
+                                                                    id="car-select-parts-options-7" role="option"
+                                                                    aria-selected="false" data-js-select-option>
                                                                     Tesla
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-8"
-                                                                    role="option" aria-selected="false"
-                                                                    data-js-select-option>
+                                                                <div class="select__option"
+                                                                    id="car-select-parts-options-8" role="option"
+                                                                    aria-selected="false" data-js-select-option>
                                                                     Land Rover
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-9"
-                                                                    role="option" aria-selected="false"
-                                                                    data-js-select-option>
+                                                                <div class="select__option"
+                                                                    id="car-select-parts-options-9" role="option"
+                                                                    aria-selected="false" data-js-select-option>
                                                                     Cadillac
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-10"
-                                                                    role="option" aria-selected="false"
-                                                                    data-js-select-option>
+                                                                <div class="select__option"
+                                                                    id="car-select-parts-options-10" role="option"
+                                                                    aria-selected="false" data-js-select-option>
                                                                     Alfa Romeo
                                                                 </div>
                                                             </div>
@@ -415,12 +416,12 @@
                                                            the <option> tag that has the `selected` attribute during page load.
                                                     -->
                                                     <div class="select" data-js-select>
-                                                        <label class="form-action-home__label" id="prefix-select-label"
-                                                            for="dropdownPrefix">
+                                                        <label class="form-action-home__label" id="model-parts-label"
+                                                            for="model-parts-select">
                                                             Model
                                                         </label>
                                                         <select class="select__original-control field__control"
-                                                            id="dropdownPrefix" tabindex="-1"
+                                                            id="model-parts-select" tabindex="-1"
                                                             data-js-select-original-control>
                                                             <option selected value="Mercedes-Benz A-Class">Mercedes-Benz
                                                                 A-Class
@@ -438,35 +439,36 @@
                                                             <div class="select__button field__control" tabindex="0"
                                                                 role="combobox" aria-expanded="false"
                                                                 aria-haspopup="listbox"
-                                                                aria-controls="prefix-select-dropdown"
-                                                                aria-labelledby="prefix-select-label"
+                                                                aria-controls="model-parts-dropdown"
+                                                                aria-labelledby="model-parts-label"
+                                                                aria-activedescendant="model-parts-option-1"
                                                                 data-js-select-button>
                                                                 Mercedes-Benz A-Class
                                                             </div>
-                                                            <div class="select__dropdown" id="prefix-select-dropdown"
-                                                                role="listbox" aria-labelledby="prefix-select-label"
+                                                            <div class="select__dropdown" id="model-parts-dropdown"
+                                                                role="listbox" aria-labelledby="model-parts-label"
                                                                 data-js-select-dropdown>
                                                                 <div class="select__option is-selected is-current"
-                                                                    id="prefix-select-option-1" role="option"
+                                                                    id="model-parts-option-1" role="option"
                                                                     aria-selected="true" data-js-select-option>
                                                                     Mercedes-Benz A-Class
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-2"
+                                                                <div class="select__option" id="model-parts-option-2"
                                                                     role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Mercedes-Benz C-Class
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-3"
+                                                                <div class="select__option" id="model-parts-option-3"
                                                                     role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Mercedes-Benz E-Class
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-4"
+                                                                <div class="select__option" id="model-parts-option-4"
                                                                     role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Mercedes-Benz S-Class
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-5"
+                                                                <div class="select__option" id="model-parts-option-5"
                                                                     role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Mercedes-Benz G-Class
@@ -498,12 +500,12 @@
                                                            the <option> tag that has the `selected` attribute during page load.
                                                     -->
                                                     <div class="select" data-js-select>
-                                                        <label class="form-action-home__label" id="prefix-select-label"
-                                                            for="dropdownPrefix">
+                                                        <label class="form-action-home__label" id="parts-year-label"
+                                                            for="parts-year-select">
                                                             Year
                                                         </label>
                                                         <select class="select__original-control field__control"
-                                                            id="dropdownPrefix" tabindex="-1"
+                                                            id="parts-year-select" tabindex="-1"
                                                             data-js-select-original-control>
                                                             <option selected value="2014">2014</option>
                                                             <option value="2013">2013</option>
@@ -515,35 +517,36 @@
                                                             <div class="select__button field__control" tabindex="0"
                                                                 role="combobox" aria-expanded="false"
                                                                 aria-haspopup="listbox"
-                                                                aria-controls="prefix-select-dropdown"
-                                                                aria-labelledby="prefix-select-label"
+                                                                aria-controls="parts-year-dropdown"
+                                                                aria-labelledby="parts-year-label"
+                                                                aria-activedescendant="parts-year-option-1"
                                                                 data-js-select-button>
                                                                 2014
                                                             </div>
-                                                            <div class="select__dropdown" id="prefix-select-dropdown"
-                                                                role="listbox" aria-labelledby="prefix-select-label"
+                                                            <div class="select__dropdown" id="parts-year-dropdown"
+                                                                role="listbox" aria-labelledby="parts-year-label"
                                                                 data-js-select-dropdown>
                                                                 <div class="select__option is-selected is-current"
-                                                                    id="prefix-select-option-1" role="option"
+                                                                    id="parts-year-option-1" role="option"
                                                                     aria-selected="true" data-js-select-option>
                                                                     2014
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-2"
+                                                                <div class="select__option" id="parts-year-option-2"
                                                                     role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     2013
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-3"
+                                                                <div class="select__option" id="parts-year-option-3"
                                                                     role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     2012
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-4"
+                                                                <div class="select__option" id="parts-year-option-4"
                                                                     role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     2011
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-5"
+                                                                <div class="select__option" id="parts-year-option-5"
                                                                     role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     2010
@@ -561,15 +564,15 @@
                                                     <img src="img/icons/button-arrow.svg" alt="button-icon">
                                                 </div>
                                             </button>
-                                        </div>
+                                        </fieldset>
                                     </form>
                                     <form action="#" class="action-hero-home__form form-action-home"
                                         data-filter-content="car">
-                                        <div class="form-action-home__step" data-step="01">
+                                        <fieldset class="form-action-home__step" data-step="01">
                                             <div class="form-action-home__item form-action-home__item-alt">
-                                                <label for="userName" class="form-action-home__label">Enter VIN</label>
-                                                <input type="text" placeholder="1GKS...456" name="User-name"
-                                                    id="userName" class="form-action-home__input">
+                                                <label for="vin-code-cars" class="form-action-home__label">Enter VIN</label>
+                                            <input autocapitalize="characters" autocorrect="off" type="text" placeholder="1GKS...456" name="Vin code" id="vin-code-cars"
+                                                class="form-action-home__input">
                                                 <div class="form-action-home__error-message">
                                                     Error: Unable to connect to the server
                                                 </div>
@@ -582,84 +585,68 @@
                                             <div class="form-action-home__fields">
                                                 <div class="form-action-home__field">
                                                     <div class="select" data-js-select>
-                                                        <label class="form-action-home__label" id="prefix-select-label"
-                                                            for="dropdownPrefix">
+                                                        <label class="form-action-home__label" id="car-sell-label" for="car-sell-select">
                                                             Make
                                                         </label>
-                                                        <select class="select__original-control field__control"
-                                                            id="dropdownPrefix" tabindex="-1"
+                                                        <select class="select__original-control field__control" id="car-sell-select" tabindex="-1"
                                                             data-js-select-original-control>
-                                                            <option selected value="Mercedes-Benz">Mercedes-Benz
+                                                            <option selected value="Mercedes-Benza">Mercedes-Benza
                                                             </option>
                                                             <option value="Audi">Audi</option>
                                                             <option value="Porsche">Porsche</option>
                                                             <option value="Lexus">Lexus</option>
-                                                            <option value="Jaguar ">Jaguar</option>
+                                                            <option value="Jaguar">Jaguar</option>
                                                             <option value="Volvo">Volvo</option>
                                                             <option value="Tesla">Tesla</option>
-                                                            <option value="Land-Rover">Land Rover</option>
+                                                            <option value="Land Rover">Land Rover</option>
                                                             <option value="Cadillac">Cadillac</option>
-                                                            <option value="Alfa-Romeo">Alfa Romeo</option>
+                                                            <option value="Alfa Romeo">Alfa Romeo</option>
                                                         </select>
                                                         <div class="select__body">
-                                                            <div class="select__button field__control" tabindex="0"
-                                                                role="combobox" aria-expanded="false"
-                                                                aria-haspopup="listbox"
-                                                                aria-controls="prefix-select-dropdown"
-                                                                aria-labelledby="prefix-select-label"
-                                                                data-js-select-button>
+                                                            <div class="select__button field__control" tabindex="0" role="combobox" aria-expanded="false"
+                                                                aria-haspopup="listbox" aria-controls="car-sell-dropdown" aria-labelledby="car-sell-label"
+                                                                aria-activedescendant="car-sell-option-1" data-js-select-button>
                                                                 Mercedes-Benza
                                                             </div>
-                                                            <div class="select__dropdown" id="prefix-select-dropdown"
-                                                                role="listbox" aria-labelledby="prefix-select-label"
+                                                            <div class="select__dropdown" id="car-sell-dropdown" role="listbox" aria-labelledby="car-sell-label"
                                                                 data-js-select-dropdown>
-                                                                <div class="select__option is-selected is-current"
-                                                                    id="prefix-select-option-1" role="option"
-                                                                    aria-selected="true" data-js-select-option>
-                                                                    Mercedes-Benz
+                                                                <div class="select__option is-selected is-current" id="car-sell-option-1" role="option" aria-selected="true"
+                                                                    data-js-select-option>
+                                                                    Mercedes-Benza
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-2"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="car-sell-option-2" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Audi
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-3"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="car-sell-option-3" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Porsche
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-4"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="car-sell-option-4" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Lexus
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-5"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="car-sell-option-5" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Jaguar
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-6"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="car-sell-option-6" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Volvo
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-7"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="car-sell-option-7" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Tesla
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-8"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="car-sell-option-8" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Land Rover
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-9"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="car-sell-option-9" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Cadillac
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-10"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="car-sell-option-10" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Alfa Romeo
                                                                 </div>
@@ -669,12 +656,10 @@
                                                 </div>
                                                 <div class="form-action-home__field">
                                                     <div class="select" data-js-select>
-                                                        <label class="form-action-home__label" id="prefix-select-label"
-                                                            for="dropdownPrefix">
+                                                        <label class="form-action-home__label" id="model-sell-label" for="model-sell-select">
                                                             Model
                                                         </label>
-                                                        <select class="select__original-control field__control"
-                                                            id="dropdownPrefix" tabindex="-1"
+                                                        <select class="select__original-control field__control" id="model-sell-select" tabindex="-1"
                                                             data-js-select-original-control>
                                                             <option selected value="Mercedes-Benz A-Class">Mercedes-Benz
                                                                 A-Class
@@ -685,43 +670,34 @@
                                                             </option>
                                                             <option value="Mercedes-Benz S-Class">Mercedes-Benz S-Class
                                                             </option>
-                                                            <option value="Mercedes-Benz G-Class ">Mercedes-Benz G-Class
+                                                            <option value="Mercedes-Benz G-Class">Mercedes-Benz G-Class
                                                             </option>
                                                         </select>
                                                         <div class="select__body">
-                                                            <div class="select__button field__control" tabindex="0"
-                                                                role="combobox" aria-expanded="false"
-                                                                aria-haspopup="listbox"
-                                                                aria-controls="prefix-select-dropdown"
-                                                                aria-labelledby="prefix-select-label"
-                                                                data-js-select-button>
+                                                            <div class="select__button field__control" tabindex="0" role="combobox" aria-expanded="false"
+                                                                aria-haspopup="listbox" aria-controls="model-sell-dropdown" aria-labelledby="model-sell-label"
+                                                                aria-activedescendant="model-sell-option-1" data-js-select-button>
                                                                 Mercedes-Benz A-Class
                                                             </div>
-                                                            <div class="select__dropdown" id="prefix-select-dropdown"
-                                                                role="listbox" aria-labelledby="prefix-select-label"
+                                                            <div class="select__dropdown" id="model-sell-dropdown" role="listbox" aria-labelledby="model-sell-label"
                                                                 data-js-select-dropdown>
-                                                                <div class="select__option is-selected is-current"
-                                                                    id="prefix-select-option-1" role="option"
+                                                                <div class="select__option is-selected is-current" id="model-sell-option-1" role="option"
                                                                     aria-selected="true" data-js-select-option>
                                                                     Mercedes-Benz A-Class
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-2"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="model-sell-option-2" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Mercedes-Benz C-Class
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-3"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="model-sell-option-3" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Mercedes-Benz E-Class
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-4"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="model-sell-option-4" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Mercedes-Benz S-Class
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-5"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="model-sell-option-5" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     Mercedes-Benz G-Class
                                                                 </div>
@@ -731,12 +707,10 @@
                                                 </div>
                                                 <div class="form-action-home__field">
                                                     <div class="select" data-js-select>
-                                                        <label class="form-action-home__label" id="prefix-select-label"
-                                                            for="dropdownPrefix">
+                                                        <label class="form-action-home__label" id="year-sell-label" for="year-sell-select">
                                                             Year
                                                         </label>
-                                                        <select class="select__original-control field__control"
-                                                            id="dropdownPrefix" tabindex="-1"
+                                                        <select class="select__original-control field__control" id="year-sell-select" tabindex="-1"
                                                             data-js-select-original-control>
                                                             <option selected value="2014">2014</option>
                                                             <option value="2013">2013</option>
@@ -745,39 +719,30 @@
                                                             <option value="2010">2010</option>
                                                         </select>
                                                         <div class="select__body">
-                                                            <div class="select__button field__control" tabindex="0"
-                                                                role="combobox" aria-expanded="false"
-                                                                aria-haspopup="listbox"
-                                                                aria-controls="prefix-select-dropdown"
-                                                                aria-labelledby="prefix-select-label"
-                                                                data-js-select-button>
+                                                            <div class="select__button field__control" tabindex="0" role="combobox" aria-expanded="false"
+                                                                aria-haspopup="listbox" aria-controls="year-sell-dropdown" aria-labelledby="year-sell-label"
+                                                                aria-activedescendant="year-sell-option-1" data-js-select-button>
                                                                 2014
                                                             </div>
-                                                            <div class="select__dropdown" id="prefix-select-dropdown"
-                                                                role="listbox" aria-labelledby="prefix-select-label"
+                                                            <div class="select__dropdown" id="year-sell-dropdown" role="listbox" aria-labelledby="year-sell-label"
                                                                 data-js-select-dropdown>
-                                                                <div class="select__option is-selected is-current"
-                                                                    id="prefix-select-option-1" role="option"
+                                                                <div class="select__option is-selected is-current" id="year-sell-option-1" role="option"
                                                                     aria-selected="true" data-js-select-option>
                                                                     2014
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-2"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="year-sell-option-2" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     2013
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-3"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="year-sell-option-3" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     2012
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-4"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="year-sell-option-4" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     2011
                                                                 </div>
-                                                                <div class="select__option" id="prefix-select-option-5"
-                                                                    role="option" aria-selected="false"
+                                                                <div class="select__option" id="year-sell-option-5" role="option" aria-selected="false"
                                                                     data-js-select-option>
                                                                     2010
                                                                 </div>
@@ -794,7 +759,7 @@
                                                     <img src="img/icons/button-arrow.svg" alt="button-icon">
                                                 </div>
                                             </button>
-                                        </div>
+                                        </fieldset>
                                     </form>
                                 </div>
                             </div>
@@ -1639,7 +1604,7 @@
                                             </dl>
                                         </div>
                                     </div>
-                        
+
                                 </div>
                             </div>
                         </div>
@@ -1648,7 +1613,8 @@
                                 Lorem ipsum dolor sit <span>amet consectetur</span>.
                             </h2>
                             <div class="home-stats__subtitle">
-                                Lorem ipsum dolor sit amet consectetur. Mattis laoreet venenatis feugiat sit arcu non suspendisse habitasse urna. Urna
+                                Lorem ipsum dolor sit amet consectetur. Mattis laoreet venenatis feugiat sit arcu non
+                                suspendisse habitasse urna. Urna
                                 ac tellus turpis porttitor ac vivamus nulla sit massa.
                             </div>
                             <a href="" class="home-stats__button button">

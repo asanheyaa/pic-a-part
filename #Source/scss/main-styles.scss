@@ -4112,6 +4112,7 @@ body {
 			left: 0.75rem;
 			bottom: 0.8125rem;
 			margin-right: 0.9375rem;
+			
 		}
 	}
 
@@ -4154,6 +4155,8 @@ body {
 	}
 
 	&__title {
+	}
+	&__link {
 		font-weight: 700;
 		@include adaptiveValue(font-size, 17, 14);
 		line-height: 143%;
@@ -4209,8 +4212,10 @@ body {
 
 	&__text {
 		@include multiLineEllipsis(1);
-		max-width: 5.9375rem;
-
+		@media (max-width:991.98px) {
+			max-width: 5.9375rem;
+			
+		}
 		@media (max-width: 470px) {
 			max-width: 70px;
 		}
@@ -4254,10 +4259,19 @@ body {
 		line-height: 133%;
 		text-align: center;
 		color: #8b1e2f;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.1875rem;
 		@media (any-hover: hover) {
 			&:hover {
 				text-decoration: underline;
 			}
+		}
+		&-arrow{
+			display:inline-flex;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 }
