@@ -16,6 +16,7 @@
 	display: -webkit-box;
 	-webkit-line-clamp: $lineCount;
 	-webkit-box-orient: vertical;
+	//   white-space: nowrap;
 }
 
 @mixin svgSizes($width, $height) {
