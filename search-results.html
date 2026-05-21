@@ -127,7 +127,7 @@
                         Sell Your Car
                     </div>
                 </a>
-                <button class='burger-menu'>
+                <button class='burger-menu' aria-label="open and close menu">
                     <span class='burger-menu__line burger-menu__line_1'></span>
                     <span class='burger-menu__line burger-menu__line_2'></span>
                     <span class='burger-menu__line burger-menu__line_3'></span>
@@ -173,9 +173,9 @@
                                 </div>
                             </a>
                             <div class="header-search-results__sort">
-                                <span class="header-search-results__sort-text">
+                                <label class="header-search-results__sort-text" for="select-sort-search" id="select-sort-label">
                                     Sort by:
-                                </span>
+                                </label>
                                 <div class="select select-sort" data-js-select>
                                     <!-- 
                                   ⚠️ CRITICAL HTML MARKUP RULES FOR SELECT COMPONENT
@@ -198,8 +198,8 @@
                                      - The active item text inside the button ([data-js-select-button]) MUST match 
                                        the <option> tag that has the `selected` attribute during page load.
                                 -->
-                                    <select class="select__original-control field__control" id="select-sort-dropdown"
-                                        tabindex="-1" data-js-select-original-control>
+                                    <select class="select__original-control field__control" id="select-sort-search" tabindex="-1"
+                                        data-js-select-original-control>
                                         <option selected value="Set Date (Newest)">Set Date (Newest)</option>
                                         <option value="Set Date (Oldest)">Set Date (Oldest)</option>
                                         <option value="Recently Updated">Recently Updated</option>
@@ -207,33 +207,31 @@
                                         <option value="Most Viewed">Most Viewed</option>
                                     </select>
                                     <div class="select__body">
-                                        <div class="select__button field__control" tabindex="0" role="combobox"
-                                            aria-expanded="false" aria-haspopup="listbox"
-                                            aria-controls="select-sort-dropdown-desktop"
-                                            aria-labelledby="prefix-select-label" data-js-select-button>
+                                        <div class="select__button field__control" tabindex="0" role="combobox" aria-expanded="false"
+                                            aria-haspopup="listbox" aria-controls="dropdown-sort-search"
+                                            aria-labelledby="select-sort-label" data-js-select-button>
                                             Set Date (Newest)
                                         </div>
-                                        <div class="select__dropdown" id="select-sort-dropdown-desktop" role="listbox"
-                                            aria-labelledby="prefix-select-label" data-js-select-dropdown>
-                                            <div class="select__option is-selected is-current"
-                                                id="select-sort-dropdown-desktop-1" role="option" aria-selected="true"
-                                                data-js-select-option>
+                                        <div class="select__dropdown" id="dropdown-sort-search" role="listbox"
+                                            aria-labelledby="select-sort-label" data-js-select-dropdown>
+                                            <div class="select__option is-selected is-current" id="dropdown-sort-option-1" role="option"
+                                                aria-selected="true" data-js-select-option>
                                                 Set Date (Newest)
                                             </div>
-                                            <div class="select__option" id="select-sort-dropdown-desktop-2"
-                                                role="option" aria-selected="false" data-js-select-option>
+                                            <div class="select__option" id="dropdown-sort-option-2" role="option" aria-selected="false"
+                                                data-js-select-option>
                                                 Set Date (Oldest)
                                             </div>
-                                            <div class="select__option" id="select-sort-dropdown-desktop-3"
-                                                role="option" aria-selected="false" data-js-select-option>
+                                            <div class="select__option" id="dropdown-sort-option-3" role="option" aria-selected="false"
+                                                data-js-select-option>
                                                 Recently Updated
                                             </div>
-                                            <div class="select__option" id="select-sort-dropdown-desktop-4"
-                                                role="option" aria-selected="false" data-js-select-option>
+                                            <div class="select__option" id="dropdown-sort-option-4" role="option" aria-selected="false"
+                                                data-js-select-option>
                                                 Most Popular
                                             </div>
-                                            <div class="select__option" id="select-sort-dropdown-desktop-5"
-                                                role="option" aria-selected="false" data-js-select-option>
+                                            <div class="select__option" id="dropdown-sort-option-5" role="option" aria-selected="false"
+                                                data-js-select-option>
                                                 Most Viewed
                                             </div>
                                         </div>
@@ -259,7 +257,8 @@
                             <div class="header-body-search__item">
                                 Gallery
                             </div>
-                            <button type="button" class="header-body-search__item header-body-search__item-center _hight-to-low">
+                            <button type="button"
+                                class="header-body-search__item header-body-search__item-center _hight-to-low">
                                 <span class="header-body-search__text">
                                     Year
                                 </span>
@@ -289,7 +288,8 @@
                             </div>
                             <div class="header-body-search__item">
                                 VIN
-                                <button type="button" class="header-body-search__button" data-pop-up-trigger="vin-search-info">
+                                <button type="button" class="header-body-search__button" aria-label="More about VIN"
+                                    data-pop-up-trigger="vin-search-info">
                                     <img src="img/icons/home-page/info.svg" alt="">
                                 </button>
                                 <div class="header-body-search__vin-popup" data-pop-up-content="vin-search-info">
@@ -326,19 +326,19 @@
                                         <div class='products-body-search__wrapper swiper-wrapper'>
                                             <div class='products-body-search__slide swiper-slide'>
                                                 <div class="products-body-search__cover ibg">
-                                                    <img src="img/search-results/products/product-image_01.jpg"
+                                                    <img src="img/search-results/products/product-image_01.jpg" loading="lazy"
                                                         alt="car">
                                                 </div>
                                             </div>
                                             <div class='products-body-search__slide swiper-slide'>
                                                 <div class="products-body-search__cover ibg">
-                                                    <img src="img/search-results/products/product-image_01.jpg"
+                                                    <img src="img/search-results/products/product-image_01.jpg" loading="lazy"
                                                         alt="car">
                                                 </div>
                                             </div>
                                             <div class='products-body-search__slide swiper-slide'>
                                                 <div class="products-body-search__cover ibg">
-                                                    <img src="img/search-results/products/product-image_01.jpg"
+                                                    <img src="img/search-results/products/product-image_01.jpg" loading="lazy"
                                                         alt="car">
                                                 </div>
                                             </div>
@@ -381,19 +381,19 @@
                                         <div class='products-body-search__wrapper swiper-wrapper'>
                                             <div class='products-body-search__slide swiper-slide'>
                                                 <div class="products-body-search__cover ibg">
-                                                    <img src="img/search-results/products/product-image_01.jpg"
+                                                    <img src="img/search-results/products/product-image_01.jpg" loading="lazy"
                                                         alt="car">
                                                 </div>
                                             </div>
                                             <div class='products-body-search__slide swiper-slide'>
                                                 <div class="products-body-search__cover ibg">
-                                                    <img src="img/search-results/products/product-image_01.jpg"
+                                                    <img src="img/search-results/products/product-image_01.jpg" loading="lazy"
                                                         alt="car">
                                                 </div>
                                             </div>
                                             <div class='products-body-search__slide swiper-slide'>
                                                 <div class="products-body-search__cover ibg">
-                                                    <img src="img/search-results/products/product-image_01.jpg"
+                                                    <img src="img/search-results/products/product-image_01.jpg" loading="lazy"
                                                         alt="car">
                                                 </div>
                                             </div>
@@ -436,19 +436,19 @@
                                         <div class='products-body-search__wrapper swiper-wrapper'>
                                             <div class='products-body-search__slide swiper-slide'>
                                                 <div class="products-body-search__cover ibg">
-                                                    <img src="img/search-results/products/product-image_01.jpg"
+                                                    <img src="img/search-results/products/product-image_01.jpg" loading="lazy"
+                                                        alt="car"> 
+                                                </div>
+                                            </div>
+                                            <div class='products-body-search__slide swiper-slide'>
+                                                <div class="products-body-search__cover ibg">
+                                                    <img src="img/search-results/products/product-image_01.jpg" loading="lazy"
                                                         alt="car">
                                                 </div>
                                             </div>
                                             <div class='products-body-search__slide swiper-slide'>
                                                 <div class="products-body-search__cover ibg">
-                                                    <img src="img/search-results/products/product-image_01.jpg"
-                                                        alt="car">
-                                                </div>
-                                            </div>
-                                            <div class='products-body-search__slide swiper-slide'>
-                                                <div class="products-body-search__cover ibg">
-                                                    <img src="img/search-results/products/product-image_01.jpg"
+                                                    <img src="img/search-results/products/product-image_01.jpg" loading="lazy"
                                                         alt="car">
                                                 </div>
                                             </div>
@@ -493,7 +493,7 @@
                                 </div>
                                 <a href="" class="footer-search-results__button">
                                     <div class="footer-search-results__icon">
-                                        <img src="img/icons/search-result/download.svg" aria-hidden="true" alt="">
+                                        <img src="img/icons/search-result/download.svg" aria-hidden="true" loading="lazy" alt="">
                                     </div>
                                     <div class="footer-search-results__text">
                                         Save my search
@@ -502,31 +502,31 @@
                             </div>
                             <div class="footer-search-results__actions">
                                 <div class="footer-search-results__select">
-                                    Rows per page:
+                                    <label id="label-search-numb" for="select-search-numb">Rows per page:</label>
                                     <div class="select select-sort" data-js-select>
                                         <!-- 
-                                                                                              ⚠️ CRITICAL HTML MARKUP RULES FOR SELECT COMPONENT
-                                                                                              
-                                                                                              1. COMPONENT BEHAVIOR BY DEVICE:
-                                                                                                 - The custom dropdown ([data-js-select-dropdown]) is displayed ONLY on Desktop and Tablets.
-                                                                                                 - The native <select> ([data-js-select-original-control]) is displayed ONLY on Mobile devices.
-                                                                                              
-                                                                                              2. OPTION ORDER SYNCHRONIZATION:
-                                                                                                 - The order of elements inside the custom dropdown MUST perfectly match 
-                                                                                                   the order of <option> tags inside the native <select> (Index-to-Index).
-                                                                                              
-                                                                                              3. VALUE & TEXT IDENTITY:
-                                                                                                 - The `value` attribute of the <option> tag MUST be exactly identical to its inner text 
-                                                                                                   (case-sensitive), otherwise JavaScript won't be able to pass the value to the control.
-                                                                                                 - Correct:   <option value="Oldest">Oldest</option>
-                                                                                                 - Incorrect: <option value="oldest">Oldest</option>
-                                                                                              
-                                                                                              4. INITIAL INITIALIZATION:
-                                                                                                 - The active item text inside the button ([data-js-select-button]) MUST match 
-                                                                                                   the <option> tag that has the `selected` attribute during page load.
-                                                                                            -->
-                                        <select class="select__original-control field__control"
-                                            id="select-products-numb" tabindex="-1" data-js-select-original-control>
+                                                                                                                                  ⚠️ CRITICAL HTML MARKUP RULES FOR SELECT COMPONENT
+                                                                                                                                  
+                                                                                                                                  1. COMPONENT BEHAVIOR BY DEVICE:
+                                                                                                                                     - The custom dropdown ([data-js-select-dropdown]) is displayed ONLY on Desktop and Tablets.
+                                                                                                                                     - The native <select> ([data-js-select-original-control]) is displayed ONLY on Mobile devices.
+                                                                                                                                  
+                                                                                                                                  2. OPTION ORDER SYNCHRONIZATION:
+                                                                                                                                     - The order of elements inside the custom dropdown MUST perfectly match 
+                                                                                                                                       the order of <option> tags inside the native <select> (Index-to-Index).
+                                                                                                                                  
+                                                                                                                                  3. VALUE & TEXT IDENTITY:
+                                                                                                                                     - The `value` attribute of the <option> tag MUST be exactly identical to its inner text 
+                                                                                                                                       (case-sensitive), otherwise JavaScript won't be able to pass the value to the control.
+                                                                                                                                     - Correct:   <option value="Oldest">Oldest</option>
+                                                                                                                                     - Incorrect: <option value="oldest">Oldest</option>
+                                                                                                                                  
+                                                                                                                                  4. INITIAL INITIALIZATION:
+                                                                                                                                     - The active item text inside the button ([data-js-select-button]) MUST match 
+                                                                                                                                       the <option> tag that has the `selected` attribute during page load.
+                                                                                                                                -->
+                                        <select class="select__original-control field__control" id="select-search-numb"
+                                            tabindex="-1" data-js-select-original-control>
                                             <option selected value="20">20</option>
                                             <option value="40">40</option>
                                             <option value="60">60</option>
@@ -534,24 +534,25 @@
                                         <div class="select__body">
                                             <div class="select__button field__control" tabindex="0" role="combobox"
                                                 aria-expanded="false" aria-haspopup="listbox"
-                                                aria-controls="select-products-numb-desktop"
-                                                aria-labelledby="prefix-select-label" data-js-select-button>
+                                                aria-controls="dropdown-search-numb"
+                                                aria-labelledby="label-search-numb"
+                                                data-js-select-button>
                                                 20
                                             </div>
-                                            <div class="select__dropdown" id="select-products-numb-desktop"
-                                                role="listbox" aria-labelledby="prefix-select-label"
+                                            <div class="select__dropdown" id="dropdown-search-numb" role="listbox"
+                                                aria-labelledby="label-search-numb"
                                                 data-js-select-dropdown>
                                                 <div class="select__option is-selected is-current"
-                                                    id="select-products-numb-desktop-1" role="option"
-                                                    aria-selected="true" data-js-select-option>
+                                                    id="option-search-numb-1" role="option" aria-selected="true"
+                                                    data-js-select-option>
                                                     20
                                                 </div>
-                                                <div class="select__option" id="select-products-numb-desktop-2"
-                                                    role="option" aria-selected="false" data-js-select-option>
+                                                <div class="select__option" id="option-search-numb-2" role="option"
+                                                    aria-selected="false" data-js-select-option>
                                                     40
                                                 </div>
-                                                <div class="select__option" id="select-products-numb-desktop-3"
-                                                    role="option" aria-selected="false" data-js-select-option>
+                                                <div class="select__option" id="option-search-numb-3" role="option"
+                                                    aria-selected="false" data-js-select-option>
                                                     60
                                                 </div>
                                             </div>

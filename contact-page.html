@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nevada | Pic a part">
 
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main-styles.css">
 
 
@@ -127,7 +126,7 @@
                         Sell Your Car
                     </div>
                 </a>
-                <button class='burger-menu'>
+                <button class='burger-menu' aria-label="open and close menu">
                     <span class='burger-menu__line burger-menu__line_1'></span>
                     <span class='burger-menu__line burger-menu__line_2'></span>
                     <span class='burger-menu__line burger-menu__line_3'></span>
@@ -196,23 +195,25 @@
                         </div>
                         <div class="footer-contact-hero">
                             <button type="button" class="footer-contact-hero__message" aria-label="message">
-                                <div class="footer-contact-hero__wrapper"><img src="img/icons/contact/message.svg"
-                                        alt="message"></div>
+                                <span class="footer-contact-hero__wrapper">
+                                    <img src="img/icons/contact/message.svg"
+                                        alt="message" loading="lazy">
+                                    </span>
                                 <span></span>
                             </button>
                             <div class="footer-contact-hero__actions">
                                 <div class="footer-contact-hero__buttons">
                                     <button type="button" disabled aria-label="previous form section"
                                         class="footer-contact-hero__button footer-contact-hero__button-prev ">
-                                        <img src="img/icons/contact/button-arrow.svg" alt="select arrow">
+                                        <img src="img/icons/contact/button-arrow.svg" alt="select arrow" loading="lazy">
                                     </button>
                                     <button type="button" aria-label="previous form section"
                                         class="footer-contact-hero__button footer-contact-hero__button-next">
-                                        <img src="img/icons/contact/button-arrow.svg" alt="select arrow">
+                                        <img src="img/icons/contact/button-arrow.svg" alt="select arrow" loading="lazy">
                                     </button>
                                 </div>
                                 <div class="footer-contact-hero__powered">
-                                    <img src="img/icons/contact/typeform.svg" alt="powered by Typeform">
+                                    <img src="img/icons/contact/typeform.svg" loading="lazy" alt="powered by Typeform">
                                 </div>
                             </div>
                         </div>
@@ -223,8 +224,8 @@
                 <div class="contact-locations__container">
                     <div class="contact-locations__columns">
                         <article class="contact-locations__column">
-                            <div class="contact-locations__map ibg">
-                                <img src="img/contact/map-placegolder.jpg" loading="lazy" alt="map">
+                            <div class="contact-locations__map-wrapper">
+                                <img class="contact-locations__map" src="img/contact/map-placegolder.jpg" loading="lazy" alt="map">
                             </div>
                             <div class="contact-locations__contact-info">
                                 <h2 class="contact-locations__title">
@@ -238,7 +239,7 @@
                                     <li class="contact-locations__item">
                                         <a href="tel:7026431776" class="contact-locations__link">
                                             <div class="contact-locations__icon">
-                                                <img src="img/icons/contact/tel.svg" aria-hidden="true" alt="">
+                                                <img src="img/icons/contact/tel.svg" aria-hidden="true" loading="lazy" alt="">
                                             </div>
                                             <div class="contact-locations__text">
                                                 702-643-1776
@@ -248,7 +249,7 @@
                                     <li class="contact-locations__item">
                                         <a href="mailto:info@nvpap.com" class="contact-locations__link">
                                             <div class="contact-locations__icon">
-                                                <img src="img/icons/contact/mail.svg" aria-hidden="true" alt="">
+                                                <img src="img/icons/contact/mail.svg" aria-hidden="true" loading="lazy" alt="">
                                             </div>
                                             <div class="contact-locations__text">
                                                 info@nvpap.com
@@ -259,32 +260,32 @@
                             </div>
                         </article>
                           <article class="contact-locations__column">
-                            <div class="contact-locations__map ibg">
-                                <img src="img/contact/map-placegolder.jpg" loading="lazy" alt="map">
+                            <div class="contact-locations__map-wrapper">
+                                <img class="contact-locations__map" src="img/contact/map-placegolder.jpg" loading="lazy" alt="map">
                             </div>
                             <div class="contact-locations__contact-info">
                                 <h2 class="contact-locations__title">
-                                    Pic-A-Part Las Vegas
+                                    Pic-A-Part Henderson
                                 </h2>
                                 <address class="contact-locations__address">
-                                    5100 N. Lamb Blvd. #5
-                                    North Las Vegas, NV 89115
+                                    110 W. Rolly Str.
+                                    Henderson, NV 89011
                                 </address>
                                 <ul class="contact-locations__list">
                                     <li class="contact-locations__item">
-                                        <a href="tel:7026431776" class="contact-locations__link">
+                                        <a href="tel:7025651414" class="contact-locations__link">
                                             <div class="contact-locations__icon">
-                                                <img src="img/icons/contact/tel.svg" aria-hidden="true" alt="">
+                                                <img src="img/icons/contact/tel.svg" aria-hidden="true" loading="lazy" alt="">
                                             </div>
                                             <div class="contact-locations__text">
-                                                702-643-1776
+                                                702-565-1414
                                             </div>
                                         </a>
                                     </li>
                                     <li class="contact-locations__item">
                                         <a href="mailto:info@nvpap.com" class="contact-locations__link">
                                             <div class="contact-locations__icon">
-                                                <img src="img/icons/contact/mail.svg" aria-hidden="true" alt="">
+                                                <img src="img/icons/contact/mail.svg" aria-hidden="true" loading="lazy" alt="">
                                             </div>
                                             <div class="contact-locations__text">
                                                 info@nvpap.com
@@ -302,11 +303,11 @@
                     <div class='get-started__container'>
                         <div class="get-started__body">
                             <div class="get-started__back ibg">
-                                <img src="img/get-started/back.jpg" alt="get-started background">
+                                <img src="img/get-started/back.jpg" loading="lazy" alt="get-started background">
                             </div>
                             <div class="get-started__wrapper">
                                 <div class="get-started__logo">
-                                    <img src="img/main/footer-logo.png" alt="logo">
+                                    <img src="img/main/footer-logo.png" loading="lazy" alt="logo">
                                 </div>
                                 <h2 class="get-started__title title title-white" id="get-started-title">
                                     Lorem ipsum dolor sit amet
@@ -318,129 +319,128 @@
                                     </p>
                                 </div>
                                 <a href="" class="get-started__button button">
-                                    <div class="button__text">
+                                    <span class="button__text">
                                         Get started
-                                    </div>
-                                    <div class="button__icon">
-                                        <img src="img/icons/button-arrow.svg" alt="button-icon">
-                                    </div>
+                                    </span>
+                                    <span class="button__icon">
+                                        <img src="img/icons/button-arrow.svg" loading="lazy" alt="button-icon">
+                                    </span>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__container-large">
-                <div class="footer__container">
-                    <div class="footer__info">
-                        <a href="/" class="footer__logo" aria-label="logo and link to homepage">
-                            <img src="img/main/footer-logo.png" alt="logo">
-                        </a>
-                        <div class="footer__slogan">
-                            Stay up-to-date with the latest from Nevada Pic a Part!
+            </main>
+            <footer class="footer">
+                <div class="footer__container-large">
+                    <div class="footer__container">
+                        <div class="footer__info">
+                            <a href="/" class="footer__logo" aria-label="logo and link to homepage">
+                                <img src="img/main/footer-logo.png" loading="lazy" alt="logo">
+                            </a>
+                            <div class="footer__slogan">
+                                Stay up-to-date with the latest from Nevada Pic a Part!
+                            </div>
+                            <form action="#" class="subscribe-form">
+                                <div class="subscribe-form__icon">
+                                    <img src="img/icons/footer/email.svg" loading="lazy" alt="email icon">
+                                </div>
+                                <div class="subscribe-form__item">
+                                    <input type="email" id="user-email" placeholder="Enter your email "
+                                        class="subscribe-form__input">
+                                </div>
+                                <button class="subscribe-form__button" type="submit">
+                                    <span class="subscribe-form__button-icon">
+                                        <img src="img/icons/footer/arrow.svg" loading="lazy" alt="button icon">
+                                    </span>
+                                </button>
+                            </form>
                         </div>
-                        <form action="#" class="subscribe-form">
-                            <div class="subscribe-form__icon">
-                                <img src="img/icons/footer/email.svg" alt="email icon">
+                        <div class="footer__actions action-footer">
+                            <nav class="action-footer__column">
+                                <h2 class="action-footer__title">
+                                    COMPANY
+                                </h2>
+                                <ul class="action-footer__list">
+                                    <li class="action-footer__item">
+                                        <a href="" class="action-footer__link">
+                                            Locations
+                                        </a>
+                                    </li>
+                                    <li class="action-footer__item">
+                                        <a href="" class="action-footer__link">
+                                            Pricelist
+                                        </a>
+                                    </li>
+                                    <li class="action-footer__item">
+                                        <a href="" class="action-footer__link">
+                                            What Fits
+                                        </a>
+                                    </li>
+                                    <li class="action-footer__item">
+                                        <a href="" class="action-footer__link">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                    <li class="action-footer__item">
+                                        <a href="" class="action-footer__link">
+                                            Sell Your Car
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <nav class="action-footer__column">
+                                <h2 class="action-footer__title">
+                                    SUPPORT
+                                </h2>
+                                <ul class="action-footer__list">
+                                    <li class="action-footer__item">
+                                        <a href="" class="action-footer__link">
+                                            Contact us
+                                        </a>
+                                    </li>
+                                    <li class="action-footer__item">
+                                        <a href="" class="action-footer__link">
+                                            Careers
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="action-footer__socials">
+                                <h2 class="action-footer__title">
+                                    SOCIAL
+                                </h2>
+                                <ul class="action-footer__social-list">
+                                    <li class="action-footer__social-item">
+                                        <a href="" class="action-footer__social-link">
+                                            <img src="img/icons/footer/social-icon_01.svg" loading="lazy" alt="social-icon">
+                                        </a>
+                                    </li>
+                                    <li class="action-footer__social-item">
+                                        <a href="" class="action-footer__social-link">
+                                            <img src="img/icons/footer/social-icon_02.svg" loading="lazy" alt="social-icon">
+                                        </a>
+                                    </li>
+                                    <li class="action-footer__social-item">
+                                        <a href="" class="action-footer__social-link">
+                                            <img src="img/icons/footer/social-icon_03.svg" loading="lazy" alt="social-icon">
+                                        </a>
+                                    </li>
+                                    <li class="action-footer__social-item">
+                                        <a href="" class="action-footer__social-link">
+                                            <img src="img/icons/footer/social-icon_04.svg" loading="lazy" alt="social-icon">
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="subscribe-form__item">
-                                <input type="email" id="user-email" placeholder="Enter your email "
-                                    class="subscribe-form__input">
-                            </div>
-                            <button class="subscribe-form__button" type="submit">
-                                <span class="subscribe-form__button-icon">
-                                    <img src="img/icons/footer/arrow.svg" alt="button icon">
-                                </span>
-                            </button>
-                        </form>
-                    </div>
-                    <div class="footer__actions action-footer">
-                        <nav class="action-footer__column">
-                            <h2 class="action-footer__title">
-                                COMPANY
-                            </h2>
-                            <ul class="action-footer__list">
-                                <li class="action-footer__item">
-                                    <a href="" class="action-footer__link">
-                                        Locations
-                                    </a>
-                                </li>
-                                <li class="action-footer__item">
-                                    <a href="" class="action-footer__link">
-                                        Pricelist
-                                    </a>
-                                </li>
-                                <li class="action-footer__item">
-                                    <a href="" class="action-footer__link">
-                                        What Fits
-                                    </a>
-                                </li>
-                                <li class="action-footer__item">
-                                    <a href="" class="action-footer__link">
-                                        FAQ
-                                    </a>
-                                </li>
-                                <li class="action-footer__item">
-                                    <a href="" class="action-footer__link">
-                                        Sell Your Car
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav class="action-footer__column">
-                            <h2 class="action-footer__title">
-                                SUPPORT
-                            </h2>
-                            <ul class="action-footer__list">
-                                <li class="action-footer__item">
-                                    <a href="" class="action-footer__link">
-                                        Contact us
-                                    </a>
-                                </li>
-                                <li class="action-footer__item">
-                                    <a href="" class="action-footer__link">
-                                        Careers
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="action-footer__socials">
-                            <h2 class="action-footer__title">
-                                SOCIAL
-                            </h2>
-                            <ul class="action-footer__social-list">
-                                <li class="action-footer__social-item">
-                                    <a href="" class="action-footer__social-link">
-                                        <img src="img/icons/footer/social-icon_01.svg" alt="social-icon">
-                                    </a>
-                                </li>
-                                <li class="action-footer__social-item">
-                                    <a href="" class="action-footer__social-link">
-                                        <img src="img/icons/footer/social-icon_02.svg" alt="social-icon">
-                                    </a>
-                                </li>
-                                <li class="action-footer__social-item">
-                                    <a href="" class="action-footer__social-link">
-                                        <img src="img/icons/footer/social-icon_03.svg" alt="social-icon">
-                                    </a>
-                                </li>
-                                <li class="action-footer__social-item">
-                                    <a href="" class="action-footer__social-link">
-                                        <img src="img/icons/footer/social-icon_04.svg" alt="social-icon">
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer> 
     </div>
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/swipers-init.js"></script>
+
     <script src="js/script.js"></script>
 </body>
 
