@@ -283,7 +283,7 @@ function selectMenu() {
 
 selectMenu()
 
-// dropdown menu
+// dropdown menu with origin mobile select
 const MatchMedia = {
 	mobile: window.matchMedia(`(width <= 797.98px)`),
 }
@@ -669,6 +669,36 @@ function initPopups() {
 
 initPopups();
 
+// View products grid/row
+
+const changeViewButtons = document.querySelectorAll('[data-change-view]');
+
+if (changeViewButtons) {
+	changeViewButtons.forEach(changeViewButton => {
+		changeViewButton.addEventListener('click', (e) => {
+
+			changeViewButtons.forEach(changeViewButton => {
+				changeViewButton.classList.remove('_active');
+			});
+			changeViewButton.classList.add('_active')
+
+			const dataset = changeViewButton.dataset.changeView
+			const productsWrapper = document.querySelector('.body-search-results')
+
+			const isRows = dataset === "rows" ? true : false
+
+			if (isRows) {
+				productsWrapper.classList.remove('_grid')
+			} else {
+				productsWrapper.classList.add('_grid')
+			}
+		})
+
+
+
+
+	});
+}
 
 // spollers function
 
