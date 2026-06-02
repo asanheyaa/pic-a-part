@@ -164,7 +164,7 @@ body {
 
 .select-alt {
 	position: relative;
-	z-index: 5;
+	z-index: 100;
 	&._active {
 		z-index: 6;
 		.select__arrow-icon {
@@ -467,12 +467,11 @@ body {
 		width: 100%;
 		top: 0;
 		left: 0;
-		overflow: hidden;
-		&::after {
-			left: -120%;
-			transition: all 0.3s ease 0s;
-		}
 		@media (max-width: 76.25rem) {
+			&::after {
+				left: -120%;
+				transition: all 0.3s ease 0s;
+			}
 			&:has(.header-menu._active) {
 				&::after {
 					left: 0%;
@@ -497,6 +496,10 @@ body {
 	}
 
 	&__button {
+		.button__icon{
+			flex: 0 0 1.3125rem;
+			height: 1.3125rem;
+		}
 	}
 
 	&__icon {

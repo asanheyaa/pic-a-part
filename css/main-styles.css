@@ -381,7 +381,7 @@ body._lock {
 
 .select-alt {
   position: relative;
-  z-index: 5;
+  z-index: 100;
 }
 .select-alt._active {
   z-index: 6;
@@ -871,14 +871,13 @@ body._lock {
   width: 100%;
   top: 0;
   left: 0;
-  overflow: hidden;
-}
-.header-absolute::after {
-  left: -120%;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 @media (max-width: 76.25rem) {
+  .header-absolute::after {
+    left: -120%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
   .header-absolute:has(.header-menu._active)::after {
     left: 0%;
   }
@@ -907,6 +906,12 @@ body._lock {
   .header__logo {
     margin-right: auto;
   }
+}
+.header__button .button__icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1.3125rem;
+          flex: 0 0 1.3125rem;
+  height: 1.3125rem;
 }
 .header__selects {
   display: -webkit-box;
